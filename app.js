@@ -25,7 +25,6 @@ var coding_quotes = [
     "Knock, knock.' 'Who's there?' [very long pause] 'Java."
 ]
 
-
 const quotesBlock = $("#quotes");
 const quotes = $(".quote");
 const button1 = $(".butn1")
@@ -40,6 +39,8 @@ let rand = 0;
 button1.on('click', () => {
     rand = Math.floor(Math.random() * 6) + 1;
     quotes.text(coding_quotes[rand]);
+    quotesBlock.addClass("bg")
+    quotes.addClass("font")
 });
 
 button2.on('click', () => {
@@ -48,7 +49,7 @@ button2.on('click', () => {
     success.fadeIn("slow");
     setTimeout(() => {
         success.fadeOut();
-    }, 500)
+    }, 500);
 });
 
 

@@ -11,9 +11,10 @@ body {
 }
 
 body {
-    background: #000000;
-    background: -webkit-linear-gradient(to right, #0f9b0f, #000000);
+    /* background: #000000; */
+    /* background: -webkit-linear-gradient(to right, #0f9b0f, #000000); */
     background: linear-gradient(to right, #0f9b0f, #000000);
+    background-size: cover;
 }
 
 p {
@@ -48,6 +49,14 @@ p {
     text-align: center;
 }
 
+.bg {
+    background-color: #151515;
+}
+
+.font {
+    font-size: 1.3rem;
+}
+
 .quote {
     background: none;
 }
@@ -55,7 +64,7 @@ p {
 .terminal {
     background: none;
     position: absolute;
-    top: 6.7rem;
+    top: 6.9rem;
     font-size: 1rem;
     background: none;
 }
@@ -102,15 +111,34 @@ p {
     box-shadow: 20px 20px 50px rgba(10, 10, 10);
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 3rem;
+    font-size: 1rem;
+}
+
 @media all and (max-width: 980px) {
     .terminal {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     #quotes {
-        width: 20rem;
-        height: 12rem;
+        width: 18rem;
+        height: 13rem;
     }
     .quote {
-        font-size: 1rem;
+        font-size: 1.1rem;
+    }
+    .footer {
+        padding-top: 3rem;
+    }
+    .bg {
+        background-color: #1b1a17;
+        width: 16rem;
+        height: 11rem;
+    }
+    .font {
+        font-size: 0.9rem;
     }
 }
