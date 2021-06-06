@@ -37,7 +37,7 @@ const whole = $(".whole")
 let rand = 0;
 
 button1.on('click', () => {
-    rand = Math.floor(Math.random() * 6) + 1;
+    rand = Math.floor(Math.random() * 24) + 1;
     quotes.text(coding_quotes[rand]);
     quotesBlock.addClass("bg")
     quotes.addClass("font")
