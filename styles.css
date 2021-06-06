@@ -126,6 +126,7 @@ p {
     #quotes {
         width: 18rem;
         height: 13rem;
+        margin: 0 0.8rem;
     }
     .quote {
         font-size: 1.1rem;
